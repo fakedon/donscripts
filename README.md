@@ -19,4 +19,15 @@ Change user
 
 `allow user`
 
+Add multi ips
+
+add bellow
+```
+# comment socks -p1080
+# socks -p1080
+# add ip per line as bellow, change $ip1 to ip, such as 192.168.168.1
+socks -p1080 -i$ip1 -e$ip1
+socks -p1080 -i$ip2 -e$ip2
+```
+
 Run `bash 3proxy_restart.sh`
